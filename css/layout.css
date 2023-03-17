@@ -1,0 +1,64 @@
+/* 컨테이너: 748 * 545 
+    헤더이미지: 436 * 204 / 188 * 88
+    박스1: 360 * 545
+    박스2: 360 
+    1번 음료수: 306 * 272
+    2번 메뉴,돈: 306 * 194
+    3번 소지금:306 * 32
+    4번  획득: 306 * 364
+
+     
+*/
+
+/* layout */
+.banner-wrap {
+  max-width: 436px;
+  margin: auto;
+}
+
+.banner img {
+  max-width: 436px;
+  aspect-ratio: 436 / 204;
+}
+.banner {
+  margin-top: 44px;
+}
+
+.wrap {
+  margin: 44px auto;
+  width: 748px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(317px, 360px));
+  gap: 28px;
+}
+
+@media (501px <= width <= 768px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+  .banner-wrap {
+    max-width: 288px;
+  }
+
+  .banner img {
+    max-width: 320px;
+    aspect-ratio: 2 / 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    margin-top: 8px;
+  }
+
+  .banner-wrap {
+    max-width: 188px;
+  }
+  .banner img {
+    max-width: 188px;
+    aspect-ratio: 188 / 88;
+  }
+}
