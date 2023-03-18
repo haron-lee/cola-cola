@@ -33,6 +33,9 @@
             </a>
           </li>
           <li class="coke-violet">
+            <div class="sold-out">
+              <img src="img/sold-out.svg" alt="sold-out" />
+            </div>
             <a class="box-cola" href="#">
               <img src="img/coke-violet.svg" alt="Original_Cola" />
               <p>Violet_Cola</p>
@@ -41,28 +44,28 @@
           </li>
           <li class="coke-yellow">
             <a class="box-cola" href="#">
-              <img src="img/coke-yellow.svg" alt="Original_Cola" />
+              <img src="img/coke-yellow.svg" alt="Yellow_Cola" />
               <p>Yellow_Cola</p>
               <button>1000원</button>
             </a>
           </li>
           <li class="coke-cool">
             <a class="box-cola" href="#">
-              <img src="img/coke-cool.svg" alt="Original_Cola" />
+              <img src="img/coke-cool.svg" alt="Cool_Cola" />
               <p>Cool_Cola</p>
               <button>1000원</button>
             </a>
           </li>
           <li class="coke-green">
             <a class="box-cola" href="#">
-              <img src="img/coke-green.svg" alt="Original_Cola" />
+              <img src="img/coke-green.svg" alt="Green_Cola" />
               <p>Green_Cola</p>
               <button>1000원</button>
             </a>
           </li>
           <li class="coke-orange">
             <a class="box-cola" href="#">
-              <img src="img/coke-orange.svg" alt="Original_Cola" />
+              <img src="img/coke-orange.svg" alt="Orange_Cola" />
               <p>Orange_Cola</p>
               <button>1000원</button>
             </a>
@@ -76,23 +79,67 @@
           </div>
           <button class="balance_btn">거스름돈 반환</button>
           <input
+            class="deposit"
             type="number"
             placeholder="입금액 입력"
             name="입금액"
             required
           />
-          <button>입금</button>
+          <button class="deposit_btn">입금</button>
           <ul class="order-list">
             <li>
-              <img src="" alt="" />
-              <p></p>
+              <img src="img/coke-red.svg" alt="Original_Cola" />
+              <p>Original_Cola</p>
+              <button class="number">1</button>
             </li>
-            <li></li>
+            <li>
+              <img src="img/coke-green.svg" alt="Green_Cola" />
+              <p>Green_Cola</p>
+              <button class="number">2</button>
+            </li>
+            <li>
+              <img src="img/coke-orange.svg" alt="Orange_Cola" />
+              <p>Orange_Cola</p>
+              <button class="number">1</button>
+            </li>
           </ul>
-          <button>획득</button>
+          <button class="order-list_btn">획득</button>
         </div>
       </section>
-      <section class="menu-wrap">contents</section>
+      <article class="money-wrap">
+        <div class="money">
+          <p>소지금:</p>
+          <p>25,000 원</p>
+        </div>
+      </article>
+      <section class="menu-wrap">
+        <div class="menu-beverages">
+          <p>획득한 음료</p>
+          <ul class="order-list beverages-list">
+            <li>
+              <img src="img/coke-red.svg" alt="Original_Cola" />
+              <p>Original_Cola</p>
+              <button class="number">1</button>
+            </li>
+            <li>
+              <img src="img/coke-green.svg" alt="Green_Cola" />
+              <p>Green_Cola</p>
+              <button class="number">2</button>
+            </li>
+            <li>
+              <img src="img/coke-orange.svg" alt="Orange_Cola" />
+              <p>Orange_Cola</p>
+              <button class="number">1</button>
+            </li>
+            <li>
+              <img src="img/coke-violet.svg" alt="Violet_Cola" />
+              <p>Violet_Cola</p>
+              <button class="number">5</button>
+            </li>
+          </ul>
+          <p>총 금액 : 9,000 원</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
