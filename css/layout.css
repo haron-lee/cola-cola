@@ -117,6 +117,18 @@ body {
   .menu-wrap {
     padding: 0px 27px 0 27px;
   }
+
+  .deposit {
+    padding: 6px 10px;
+  }
+
+  .deposit::placeholder {
+    float: right;
+  }
+
+  .money {
+    margin-bottom: 9px;
+  }
 }
 
 /* 높이 레이아웃 */

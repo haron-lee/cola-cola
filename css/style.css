@@ -11,6 +11,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
   background: var(--background-color);
+  overflow-y: scroll;
 }
 
 button {
@@ -18,23 +19,20 @@ button {
 }
 
 /* 스크롤바 스타일 */
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.order-list::-webkit-scrollbar {
   width: 4px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+.order-list::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.order-list::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 50px;
-}
-
-body::-webkit-scrollbar-button:start:decrement,
-body::-webkit-scrollbar-button:end:increment {
-  width: 4px;
-  background: transparent;
 }
 
 .cola-wrap,
@@ -128,12 +126,12 @@ body::-webkit-scrollbar-button:end:increment {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 10px;
+  padding: 5px 10px;
   background: var(--background-color);
 }
 
 .deposit {
-  padding: 6px 0 6px 6px;
+  padding: 6px;
   border: 1px solid var(--border-color);
 }
 
@@ -153,6 +151,7 @@ body::-webkit-scrollbar-button:end:increment {
   background: var(--background-color);
   overflow-y: scroll;
   padding: 12px;
+  position: relative;
 }
 
 .order-list li {
@@ -163,6 +162,7 @@ body::-webkit-scrollbar-button:end:increment {
   background: white;
   border-radius: 5px;
   font-size: 9px;
+  cursor: pointer;
 }
 
 .order-list li:not(:last-child) {
@@ -222,9 +222,49 @@ body::-webkit-scrollbar-button:end:increment {
   margin-left: auto;
 }
 
+.beverages-list::after {
+  content: "";
+  width: 4px;
+  height: 79px;
+  background-color: white;
+  position: absolute;
+  top: 9px;
+  right: 0px;
+  border-radius: 50px;
+}
+
+/* splash-screen */
+.splash-screen {
+  position: absolute;
+  inset: 0;
+  background: var(--point-color) url(../img/splash-screen.svg) no-repeat center
+    center;
+  background-size: 50%;
+  animation: disappear 2s ease-in-out forwards;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    /* html이 사라지진 않기에 JS 사용을 권함 */
+    visibility: hidden;
+  }
+}
+
 /* media */
 @media (max-width: 500px) {
   body {
     background: white;
+  }
+  .menu-beverages p:last-child {
+    margin-bottom: 43px;
   }
 }
