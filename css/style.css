@@ -155,6 +155,11 @@ body::-webkit-scrollbar-thumb,
   position: relative;
 }
 
+.order-list button {
+  width: 30px;
+  height: 30px;
+}
+
 .order-list li {
   display: flex;
   justify-content: space-between;
@@ -204,11 +209,6 @@ body::-webkit-scrollbar-thumb,
   float: right;
   font-size: 12px;
   margin-top: 6px;
-}
-
-.menu-beverages button {
-  width: 30px;
-  height: 30px;
 }
 
 .beverages-list {
