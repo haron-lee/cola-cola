@@ -16,6 +16,7 @@ body {
 
 button {
   font-weight: 500;
+  color: #000;
 }
 
 /* 스크롤바 스타일 */
@@ -203,6 +204,11 @@ body::-webkit-scrollbar-thumb,
   float: right;
   font-size: 12px;
   margin-top: 6px;
+}
+
+.menu-beverages button {
+  width: 30px;
+  height: 30px;
 }
 
 .beverages-list {
