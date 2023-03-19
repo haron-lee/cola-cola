@@ -82,22 +82,6 @@ body::-webkit-scrollbar-button:end:increment {
   transform: translateX(-50%) translateY(-50%);
 }
 
-/* .coke-violet .box-cola::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-}
-
-.coke-violet .box-cola::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-
 .box-cola > *:not(:nth-child(3)) {
   margin-bottom: 6px;
 }
@@ -218,6 +202,7 @@ body::-webkit-scrollbar-button:end:increment {
 .menu-beverages p:last-child {
   float: right;
   font-size: 12px;
+  margin-top: 6px;
 }
 
 .beverages-list {
