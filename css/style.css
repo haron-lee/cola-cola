@@ -20,17 +20,14 @@ button {
 }
 
 /* 스크롤바 스타일 */
-body::-webkit-scrollbar,
 .order-list::-webkit-scrollbar {
   width: 4px;
 }
 
-body::-webkit-scrollbar-track,
 .order-list::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-body::-webkit-scrollbar-thumb,
 .order-list::-webkit-scrollbar-thumb {
   background-color: white;
   border-radius: 50px;
@@ -226,17 +223,6 @@ body::-webkit-scrollbar-thumb,
 
 .beverages-list li button {
   margin-left: auto;
-}
-
-.beverages-list::after {
-  content: "";
-  width: 4px;
-  height: 79px;
-  background-color: white;
-  position: absolute;
-  top: 9px;
-  right: 0px;
-  border-radius: 50px;
 }
 
 /* splash-screen */
